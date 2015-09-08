@@ -1,0 +1,19 @@
+h1 {
+  font-family: 'Bree Serif';
+  color: #E26C59;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: 'Bree Serif';
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'helvetica';
+  color: #446AA4;
+}
+
+iframe {
+  height: 230px;
+}
