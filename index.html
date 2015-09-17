@@ -20,17 +20,22 @@
     {{/each}}
   </script>
 
+  <script id='archive-template' type='text/x-handlebars-template'>
+    <ul class="archive-entry">
+    {{#each this}}
+        <li><a href={{url}}>{{title}}</a></li>
+    {{/each}}
+    </ul>
+  </script>
+
   <h1>First Listening</h1>
   <div class="now-playing">
     <h2>Now Playing</h2>
   </div>
 
+  <h2>The Archive</h2>
   <div class="archive">
-    <h2>The Archive</h2>
-    <ul class='archive-entry'>
-      <li><a href="http://www.npr.org/player/embed/436304859/436682473">Gary Clark Jr. - 'The Story of Sonny Boy Slim'</a></li>
-      <li><a href="http://www.npr.org/player/embed/436304494/436362584">Petite Noir - 'La Vie Est Belle/Life Is Beautiful'</a></li>
-    </ul>
+
   </div>
 
 </body>
