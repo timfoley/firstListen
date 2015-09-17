@@ -17,3 +17,11 @@ h3 {
 iframe {
   height: 230px;
 }
+
+p, li {
+  font-family: 'helvetica';
+}
+
+a {
+  color: #446AA4;
+}
