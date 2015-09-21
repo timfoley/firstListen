@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-  var links = ["http://www.npr.org/2015/09/02/436304494/first-listen-petite-noir-la-vie-est-belle-life-is-beautiful", "http://www.npr.org/2015/09/02/436304859/first-listen-gary-clark-jr-the-story-of-sonny-boy-slim", "http://www.npr.org/2015/09/16/439181153/first-listen-los-lobos-gates-of-gold", "http://www.npr.org/2015/09/16/439491704/first-listen-youth-lagoon-savage-hills-ballroom", "http://www.npr.org/2015/09/09/438655152/first-listen-windhand-griefs-infernal-flower", "http://www.npr.org/2015/09/09/438581988/first-listen-yo-yo-ma-kathryn-stott-songs-from-the-arc-of-life"];
-
+  var links = ["http://www.npr.org/2015/09/20/439491238/first-listen-chvrches-every-open-eye", "http://www.npr.org/2015/09/16/436304229/first-listen-dungen-allas-sak", "http://www.npr.org/2015/09/02/436304494/first-listen-petite-noir-la-vie-est-belle-life-is-beautiful", "http://www.npr.org/2015/09/02/436304859/first-listen-gary-clark-jr-the-story-of-sonny-boy-slim", "http://www.npr.org/2015/09/16/439181153/first-listen-los-lobos-gates-of-gold", "http://www.npr.org/2015/09/16/439491704/first-listen-youth-lagoon-savage-hills-ballroom", "http://www.npr.org/2015/09/09/438655152/first-listen-windhand-griefs-infernal-flower", "http://www.npr.org/2015/09/09/438581988/first-listen-yo-yo-ma-kathryn-stott-songs-from-the-arc-of-life"];
   var context = {
     embedLinks: [],
     expiredLinks: []
@@ -11,7 +10,6 @@ $(document).ready(function() {
     $.ajax({
       url: links[i],
       success: function(result) {
-        var currentUrl = links[i];
         var tracks = $(result).find("input.embed-url");
         if (tracks[0] != undefined) {
           var firstEmbed = tracks[0].defaultValue;
